@@ -19,7 +19,7 @@
 -  Cluster up 
 ```
    Run docker compose with dispatch mode on compose file
-   docker-compose up -d
+   docker compose up -d
 ```
 -  Validate status of cluster 
 
@@ -61,6 +61,7 @@ docker exec flink-kafka-docker-example_kafka_1 kafka-topics.sh --bootstrap-serve
 
 ## Push data to topics in interactive mode
 ```
+Open a new terminal
 Change flink-kafka-docker-example_kafka_1 to local kafka container name
 
 docker exec -it flink-kafka-docker-example_kafka_1 kafka-console-producer.sh --broker-list localhost:9092 --topic my-topic
