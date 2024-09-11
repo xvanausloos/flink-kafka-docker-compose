@@ -25,7 +25,7 @@
 
 ```
    Run:
-   docker-compose ps
+   docker compose ps
    
    All the 4 service containers should be up and running
                   Name                                Command               State                   Ports
@@ -74,6 +74,7 @@ docker exec flink-kafka-docker-example_kafka_1 kafka-console-consumer.sh --boots
 ```
 
 ## Copy app jar to flink job manager container or use flink UI to submit job
+Download flink source repo elsewhere and deploy JAR.
 ```
 docker cp ./target/flink-kakfa-example-1.0-SNAPSHOT.jar flink-kafka-docker-example_jobmanager_1:/tmp/flink-kakfa-example-1.0-SNAPSHOT.jar
 ```
