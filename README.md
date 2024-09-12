@@ -80,7 +80,7 @@ docker cp ./target/flink-kakfa-example-1.0-SNAPSHOT.jar flink-kafka-docker-examp
 ```
 ## Run flink jobs or use flink UI to submit job
 ```
-docker exec flink-kafka-docker-example_jobmanager_1 flink run -c com.ibm.wh.engagement.App /tmp/flink-kakfa-example-1.0-SNAPSHOT.jar
+docker exec flink-kafka-docker-example_jobmanager_1 flink run /tmp/flink-kakfa-example-1.0-SNAPSHOT.jar
 ```
 ## List running flink jobs
 ```
